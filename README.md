@@ -16,7 +16,7 @@ n=2 => a(2) = 1
 
 n>2 => a(n) = a(n-3) + a(n-2)
 
-O serviço principal tira partido de cálculos passados para acelerar cálculos futuros por meio do caching (utilizando memoização). Além do serviço principal, há também um serviço pelo Spring Cache, para demonstrar a diferença de performance quando não é utilizada a memoização.
+O serviço principal tira partido de cálculos passados para acelerar cálculos futuros por meio do caching (utilizando memoização). Além do serviço principal, há também um serviço sem a utilização da memoização, para demonstrar a diferença de performance.
 
 ## ⚠ Pré-requisitos para execução do projeto
 
