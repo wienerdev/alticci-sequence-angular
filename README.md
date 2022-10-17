@@ -26,7 +26,9 @@ O serviço principal tira partido de cálculos passados para acelerar cálculos 
 
 ## 📌 Como utilizar?
 
-* OBS: Para os projeto funcionar normalmente, deve-se rodar o backend localmente. [Clique aqui para navegar ao repositório.](https://github.com/wienerdev/alticci-sequence)
+Para utilizar a Calculadora Alticci Sequence em produção, basta acessá-lo diretamente no seu navegador. [Clique aqui!](https://wienerdev.github.io/alticci-sequence-angular/)
+
+* OBS: Para executar o projeto com sucesso, deve-se rodar o backend localmente. [Clique aqui para navegar ao repositório.](https://github.com/wienerdev/alticci-sequence)
 
 Digite o seguinte comando no diretório raiz para baixar as dependências necessárias:
 
