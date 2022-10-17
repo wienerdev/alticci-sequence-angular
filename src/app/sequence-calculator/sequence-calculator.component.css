@@ -1,0 +1,19 @@
+.submit-button {
+    margin-left: 10px;
+}
+
+.input-number {
+    width: 300px;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+span {
+  font-weight: bold;
+}
+
+.clear-button {
+  margin-left: 20px;
+}
