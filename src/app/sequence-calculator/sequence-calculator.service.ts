@@ -8,15 +8,17 @@ import { SequenceCalculatorVO } from '../models/SequenceCalculatorVO.model';
 })
 export class SequenceCalculatorService {
 
-  private API_ALTICCI = `http://localhost:8080/alticci`;
+  private LOCAL_API_ALTICCI = `http://localhost:8080/alticci`;
+  private HEROKU_API_ALTICCI = `https://alticci-seq-api.herokuapp.com/alticci`
+
 
   constructor(private http: HttpClient) { }
 
   calculateAlticciSequenceNumber(indexNumber: number): Observable<any> {
-    return this.http.get(`${this.API_ALTICCI}/memoizationCache/${indexNumber}`);
+    return this.http.get(`${this.HEROKU_API_ALTICCI}/memoizationCache/${indexNumber}`);
   }
 
   checkSequenceCache(): Observable<any> {
-    return this.http.get(`${this.API_ALTICCI}/checkMemoCache`);
+    return this.http.get(`${this.HEROKU_API_ALTICCI}/checkMemoCache`);
   }
 }
