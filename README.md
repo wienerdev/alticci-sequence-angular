@@ -1,27 +1,43 @@
-# AlticciSequenceAngular
+<br>
+<h1 align="center">
+Calculadora Alticci Sequence (Frontend) ⚛️
+</h1>
+<br>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
+## 💬 Sobre o repositório
 
-## Development server
+A Calculadora Alticci Sequence calcula um valor da sequência Alticci com base em um índice passado, na qual é definida da seguinte forma:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+n=0 => a(0) = 0
 
-## Code scaffolding
+n=1 => a(1) = 1
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+n=2 => a(2) = 1
 
-## Build
+n>2 => a(n) = a(n-3) + a(n-2)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+O serviço principal tira partido de cálculos passados para acelerar cálculos futuros por meio do caching (utilizando memoização). Além do serviço principal, há também um serviço pelo Spring Cache, para demonstrar a diferença de performance quando não é utilizada a memoização.
 
-## Running unit tests
+## ⚠ Pré-requisitos para execução do projeto
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* Angular (v14)
+* Angular CLI
+* Node.js
 
-## Running end-to-end tests
+## 📌 Como utilizar?
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+* OBS: Para os projeto funcionar normalmente, deve-se rodar o backend localmente. [Clique aqui para navegar ao repositório.](https://github.com/wienerdev/alticci-sequence)
 
-## Further help
+Digite o seguinte comando no diretório raiz para baixar as dependências necessárias:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+npm install
+```
+
+Para executar o projeto, digite:
+
+```
+ng serve
+```
+
+Após o build, acesse o projeto pelo link: http://localhost:4200/
