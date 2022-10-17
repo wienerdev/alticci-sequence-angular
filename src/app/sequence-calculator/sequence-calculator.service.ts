@@ -15,4 +15,8 @@ export class SequenceCalculatorService {
   calculateAlticciSequenceNumber(indexNumber: number): Observable<any> {
     return this.http.get(`${this.API_ALTICCI}/memoizationCache/${indexNumber}`);
   }
+
+  checkSequenceCache(): Observable<any> {
+    return this.http.get(`${this.API_ALTICCI}/checkMemoCache`);
+  }
 }

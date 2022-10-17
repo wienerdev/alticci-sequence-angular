@@ -1,7 +1,6 @@
 <p-messages></p-messages>
 
-
-<p-card header="Find Alticci Sequence Number" [style]="{'width': '40rem', 'margin-bottom': '2em'}">
+<p-card header="Find Alticci Sequence Number" [style]="{'width': 'auto', 'margin-bottom': '2em'}">
     <span class="p-input-icon-right">
         <input type="number" class="input-number" min="0" max="2526" pInputText placeholder="Insert a number from 0 to 2526" [(ngModel)]="inputNumber" />
     </span>
@@ -13,13 +12,10 @@
     </div>
 </p-card>
 
-<p-card [style]="{'width': '40rem', 'margin-bottom': '2em'}">
-  <button pButton pRipple label="Show cache" icon="pi pi-eye" class="submit-button" type="submit"></button>
-  <button pButton pRipple label="Clear cache" icon="pi pi-trash" class="p-button-danger clear-button" type="submit"></button>
-  <div class="cache" *ngIf="isCacheLoaded">
-    <span>Result: {{resultAlticciSequence.result}}</span>
-    <br>
-    <span>{{resultAlticciSequence.processingTime}}</span>
+<p-card [style]="{'width': 'auto', 'margin-bottom': '2em'}">
+  <button pButton pRipple label="Show cache" icon="pi pi-eye" class="submit-button" type="submit" (click)="searchSequenceCache()"></button>
+  <div class="cache">
+    <textarea rows="10" cols="100" pInputTextarea [(ngModel)]="cacheList" readonly></textarea>
   </div>
 </p-card>
 

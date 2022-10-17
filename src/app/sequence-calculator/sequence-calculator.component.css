@@ -17,3 +17,11 @@ span {
 .clear-button {
   margin-left: 20px;
 }
+
+.cache {
+  margin-top: 20px;
+}
+
+textarea {
+  text-align: center;
+}
