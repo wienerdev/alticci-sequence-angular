@@ -14,7 +14,7 @@
 
 <p-card [style]="{'width': 'auto', 'margin-bottom': '2em'}">
   <button pButton pRipple label="Show cache" icon="pi pi-eye" class="submit-button" type="submit" (click)="searchSequenceCache()"></button>
-  <div class="cache">
+  <div class="cache" *ngIf="isCacheLoaded">
     <textarea rows="10" cols="100" pInputTextarea [(ngModel)]="cacheList" readonly></textarea>
   </div>
 </p-card>
